@@ -11,7 +11,7 @@ Observer.prototype.on = function(event, func) {
 
 Observer.prototype.off = function(event, func) {
 	var ref = this.listeners[event],
-		len = this.listeners.length;
+	    len = this.listeners.length;
 	for (var i = 0; i < len; i++) {
 		var listener = ref[i];
 		if (listener === func) {
